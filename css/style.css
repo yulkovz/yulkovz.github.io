@@ -1,0 +1,509 @@
+body {
+  min-width: 1080px;
+  margin: 0;
+  padding: 0;
+
+  font-family: Trebuchet MS, sans-serif;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/*HEADER*/
+.main-header {
+  padding-top: 35px;
+  padding-bottom: 80px;
+
+  background-color: #6451d5;
+}
+
+.header-top {
+  margin-bottom: 93px;
+
+  font-size: 0;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.logo-header {
+  float: left;
+  width: 182px;
+}
+
+.main-menu {
+  float: right;
+  width: 670px;
+  margin-top: 25px;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-right: 55px;
+
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: top;
+}
+
+.main-menu li:last-child {
+  margin-right: 0;
+}
+
+.main-menu a {
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  text-decoration: underline;
+}
+
+.main-menu a:active {
+  color: #9d93e2;
+  text-decoration: none;
+}
+
+.promo {
+  position: relative;
+  z-index: 10;
+
+  width: 450px;
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 380px;
+  z-index: -1;
+
+  width: 653px;
+  height: 451px;
+
+  background-image: url("../img/slider.png");
+  background-repeat: no-repeat;
+}
+
+.promo-title {
+  margin-bottom: 35px;
+
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.promo p {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Tahoma, sans-serif;
+  color: #bcb3f2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 23px 20px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #999999;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn_apply {
+  width: 280px;
+  margin-top: 50px;
+
+  background-color: #382d78;
+}
+
+.btn_apply:hover {
+  background-color: #32286c;
+}
+
+.btn_apply:active {
+  color: #8581a1;
+
+  background-color: #32286c;
+}
+
+/*БЛОК С ПРЕИМУЩЕСТВАМИ*/
+.features {
+  padding-top: 50px;
+  padding-bottom: 45px;
+
+  background-color: #efefef;
+}
+
+.features-item {
+  float: left;
+  width: 320px;
+  margin-right: 30px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.features-icon {
+  width: 73px;
+  height: 73px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+
+  background-image: url("../img/spritesheet.png");
+}
+
+.features-icon-calendar {
+  width: 57px;
+
+  background-position: -20px -20px;
+}
+
+.features-icon-tools {
+  background-position: -117px -20px;
+}
+
+.features-icon-pc {
+  width: 70px;
+
+  background-position: -229px -20px;
+}
+
+
+.features-title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.features-item p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  color: #555555;
+}
+
+/*БЛОК-ФОРМЫ ОБРАЗОВАНИЯ*/
+.education {
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  background-color: #ffffff;
+}
+
+.education-title,
+.contacts-title {
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.table-edu {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  border: 2px solid #a7a7a7;
+}
+
+.table-edu td {
+  padding: 20px 30px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Tahoma, sans-serif;
+  color: #404040;
+
+  border: 2px solid #a7a7a7;
+}
+
+.table-edu thead {
+  padding: 20px 30px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Tahoma, sans-serif;
+  color: #404040;
+
+  background: #efefef;
+}
+
+.table-edu b {
+  padding-top: 19px;
+
+  font-size: 22px;
+  line-height: 30px;
+  font-family: Trebuchet MS, sans-serif;
+  vertical-align: top;
+  color: #484848;
+}
+
+.table-edu td:nth-child(1) {
+  width: 225px;
+}
+
+.table-edu td:nth-child(2) {
+  width: 130px;
+}
+
+/*БЛОК-ФОРМЫ КОНТАКТЫ*/
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  background-color: #efefef;
+}
+
+.contacts-form {
+  float: left;
+  width: 640px;
+}
+
+.contacts-table {
+  border-collapse: collapse;
+}
+
+.contacts-table td {
+  padding-bottom: 30px;
+}
+
+.form-title {
+  width: 85px;
+  padding-right: 10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: top;
+  text-align: right;
+  color: #000000;
+}
+
+.form-field {
+  width: 515px;
+}
+
+.contacts-form input[type="text"],
+.contacts-form textarea {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 15px 20px ;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Tahoma, sans-serif;
+  color: #404040;
+
+  border: 2px solid #afafaf;
+  border-radius: 2px;
+  outline: none;
+}
+
+/* Задает высоту поля textarea */
+/*Верхний отступ текстового поля */
+.contacts-form textarea {
+  padding-top: 10px;
+  padding-bottom: 45px;
+
+  resize: none;
+}
+
+.contacts-form input[type="text"]:hover,
+.contacts-form textarea:hover {
+  border: 2px solid #7f7f7f;
+}
+
+.contacts-form input[type="text"]:focus,
+.contacts-form textarea:focus {
+  border: 2px solid #6451d5;
+}
+
+/*Отступ до и перед кнопкой заданный через ячейки таблицы*/
+.contacts-table td.td3-2,
+.contacts-table td.td4-2 {
+  padding-bottom: 15px;
+}
+
+.radio-btn label {
+  margin-right: 40px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Tahoma, sans-serif;
+}
+
+.contacts-form input[type="radio"] {
+  margin: 0;
+  margin-right: 24px;
+  margin-left: 20px;
+}
+
+.btn_send {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+
+  background-color: #382d78;
+}
+
+.btn_send:hover {
+  background-color: #32286c;
+}
+
+.btn_send:active {
+  color: #8581a1;
+
+  background-color: #32286c;
+}
+
+.contacts-instruction {
+  float: right;
+  width: 320px;
+}
+
+.contacts-instruction h3 {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.contacts-instruction p {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Tahoma, sans-serif;
+  color: #555555;
+}
+
+.contacts-instruction strong {
+  color: #000000;
+}
+
+.contacts-instruction .paragraphy-3 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.main-footer {
+  padding-top: 65px;
+  padding-bottom: 75px;
+
+  background-color: #2a2546;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.footer-address {
+  float: left;
+  width: 300px;
+  margin-right: 40px;
+}
+
+.footer-address p {
+  margin: 0;
+  margin-top: 74px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Tahoma, sans-serif;
+  color: #ffffff;
+}
+
+.footer-menu {
+  float: left;
+  width: 180px;
+  margin-top: 25px;
+}
+
+.footer-menu:last-child {
+  float: right;
+  width: 135px;
+}
+
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-menu li {
+  padding-bottom: 26px;
+}
+
+.footer-menu a {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Tahoma, sans-serif;
+  color: #a39ebe;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-menu a:active {
+  color: #595472;
+  text-decoration: none;
+}
+
+.footer-menu h3 {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Tahoma, sans-serif;
+  color: #ffffff;
+}
